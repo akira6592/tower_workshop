@@ -53,7 +53,8 @@
 
     - name: debug backup dir
       debug:
-        msg: "{{ backup }}
+        msg: "{{ backup }}"
+        
     - name: create restore job template
       tower_job_template:
         name: "Network-Restore"
